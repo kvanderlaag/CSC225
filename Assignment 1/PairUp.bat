@@ -22,7 +22,7 @@ rem #		- Run PairUp.bat			    #
 rem #		- Files which fail testing will be listed   #
 rem #		  individually.				    #
 rem #		- Pass and fail counts are displayed at the #
-rem #	 	  end of testing.			    #																					#
+rem #	 	  end of testing.			    #																					
 rem #							    #
 rem # Note: This batch script does not check whether 	    #
 rem #       runtime is within acceptable limits. Trust me,  #

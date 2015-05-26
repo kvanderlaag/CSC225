@@ -7,7 +7,7 @@ rem # Programming Assignment 1 - PairUp   		    #
 rem # Author: Keegan van der Laag (jkvander@uvic.ca)	    #
 rem #							    #
 rem # For those of you running Windows, this batch script   #
-rem # will run PairUp via the JRE, and test it with all     #	
+rem # will run PairUp via the JRE, and test it with all     #
 rem # .txt files in the same directory.			    #
 rem # 							    #
 rem # Usage:						    #
@@ -36,7 +36,7 @@ SET fail=0
 SET pass=0
 
 FOR %%F in (a1_NoPartition*.txt) DO (
-	java PairUp %%F | find "cannot" >nul
+	java PairUp %%F | find "cannot be" >nul
 	if ERRORLEVEL 1 (
 		echo Failed on %%F
 		SET /a fail = fail + 1
@@ -47,7 +47,7 @@ FOR %%F in (a1_NoPartition*.txt) DO (
 )
 
 FOR %%F in (a1_HasPartition*.txt) DO (
-	java PairUp %%F | find "can" >nul
+	java PairUp %%F | find "can be" >nul
 	if ERRORLEVEL 1 (
 		echo Failed on %%F
 		SET /a fail = fail + 1
